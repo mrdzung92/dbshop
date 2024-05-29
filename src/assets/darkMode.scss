@@ -1,0 +1,156 @@
+$bgColor1: #181a20;
+$bgColor2: #1E2329;
+$textBlackColor:#181a20;
+$borderPrimary:#181a20;
+$textPrimary: #EAECEF;
+$borderColor:#ddd;
+$textWhite:#fff;
+$primaryColor: #FCD535;
+$depthBuyBg :#102821;
+$colorDisable: #474D57;
+$iconNormal:#848E9C;
+div#wrapper {
+    &.dark-mode {
+        min-height: 100vh;
+        background-color: $bgColor2;
+        .head-com {
+            background-color: $bgColor1 ;
+
+            .right-content {
+                .icon {
+                    color: $textPrimary;
+                }
+                .lang{
+                    .lang-list{
+                        background-color: $colorDisable;
+                        opacity: 0.9;
+                        &::before{
+                            border-bottom-color: $colorDisable; 
+                        }
+                        .lang-item{
+                            .text {
+                                color: $textPrimary;
+                            }
+                        }
+                    }
+                   
+                }
+            }
+
+        }
+
+
+        navBar
+        .nav-com {
+            background-color: $bgColor1 ;
+
+            .link {
+                color: $textPrimary ;
+
+                &.active {
+                    color: $primaryColor ;
+                }
+            }
+        }
+
+        //==========home-content===
+        .home-content{
+            background-color: #2B3139;
+
+            .marquee{
+                background-color: var(--color-iconNormal);
+                .icon{
+                    background-color: var(--color-iconNormal);
+                    color: var(--color-textPrimary);
+
+                }
+                .text{
+                    color: var(--color-textGray);
+                }
+            }
+            .hot-crypto{
+                .title{
+                    color: var(--color-textWhite);
+                }
+                .crypto-list {
+                    .crypto-item{
+                        .link{
+                            .left {
+                                .name{
+                                    color: var(--color-textWhite);
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+
+            .service {
+                .content {
+                    
+                    .text{
+                        color: var(--color-textPrimary);
+                    }
+                }
+            }
+
+        }
+
+        // ============my-page=======
+        .my-page {
+            // background-color: $bgColor2;
+
+            .box-head {
+                .user-info {
+                    .info-detail {
+                        color: var($textBlackColor);
+                    }
+                }
+
+                .action {
+                    box-shadow: 0px 0px 0px 0px;
+                    border: 0.2px solid $borderColor;
+
+                    .link {
+                        .icon {
+                            color: $iconNormal;
+                        }
+
+                        color: $textPrimary;
+                    }
+                }
+            }
+
+            .menu-bar {
+                // background-color:$bgColor2 ;
+               
+                
+                .menu-list {
+                    box-shadow: 0px 0px 0px 0px;
+                   .menu-item{
+                    color:$textPrimary ;
+                    .icon{
+                        color:$iconNormal ;
+                    }
+                   }
+                }
+                .menu-detail-list{
+                    .menu-detail-item {
+                        background-color: $bgColor2;
+                        box-shadow: 0px 0px 0px 0px;
+                        .sub-menu-list{
+                            color:$textPrimary ;
+                            border: 0.5px solid $borderColor;
+                            border-radius: 10px;
+                            .icon {
+                                color:$iconNormal ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
